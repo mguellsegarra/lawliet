@@ -15,10 +15,10 @@ When working in large projects where your only option for organizing your own SD
 This tool will:
 
 * Search recursively for plain text files with the extenion you choose (.md, .html, .txt, etc.)
-* On those files it will look up for URL's and save it on memory
+* On those files it will look up for URL's
 * For every file that has URL's inside, it will check every entry making a GET request
-* Will save the results that ended with an error response code different than 200, or when the URL have preconfigured text inside its content.
-* It will export the results in a CSV file.
+* Will save the results that ended with an error response code different than 200, or when the URL have preconfigured text inside its content
+* It will export the results in a CSV file
 
 ## Installation
 
@@ -44,6 +44,8 @@ You can customize **lawliet** in order to fit your needs. For that, there's a *c
 {
   "not_found_text": "The page you're looking for could not be found (404)",
   "not_authenticated_text": "Login Mordorbank",
+  "outputFilename": "death_notes.csv"
+  "extensionFiles": ".md",
   "hosts": [
     {
       "host": "mordorbank.org",
@@ -54,18 +56,17 @@ You can customize **lawliet** in order to fit your needs. For that, there's a *c
     }
   ],
   "strictSSL": false,
-  "extensionFiles": ".md",
   "cookiePrefix": "cookie-",
-  "outputFilename": "death_notes.csv"
-}```
+}
+```
 
-* **not_found_text** --> 
-* **not_authenticated_text** --> 
-* **hosts** --> 
-* **strictSSL** --> 
-* **extensionFiles** --> 
-* **cookiePrefix** --> 
-* **outputFilename** --> 
+* **not_found_text** (required) → 
+* **not_authenticated_text** (required) → 
+* **outputFilename** (required) →  
+* **extensionFiles** (required) → 
+* **hosts** _(optional)_ → 
+* **strictSSL** _(optional)_ → 
+* **cookiePrefix** _(optional)_ →  
 
 ## Usage
 
