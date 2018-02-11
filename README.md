@@ -2,6 +2,8 @@
 
 Death notes for broken links in your documentation files
 
+![lawliet](https://github.com/mguellsegarra/lawliet/blob/master/screenshot.png?raw=true)
+
 ## Why this tool
 
 **lawliet** is a tool for searching broken links in your documentation files.
