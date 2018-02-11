@@ -43,10 +43,10 @@ You can customize **lawliet** in order to fit your needs. For that, there's a *c
 
 ```json
 {
-  "not_found_text": "The page you're looking for could not be found (404)",
-  "not_authenticated_text": "Login Mordorbank",
   "outputFilename": "death_notes.csv",
   "extensionFiles": ".md",
+  "not_found_text": "The page you're looking for could not be found (404)",
+  "not_authenticated_text": "Login Mordorbank",
   "hosts": [
     {
       "host": "mordorbank.org",
@@ -56,18 +56,19 @@ You can customize **lawliet** in order to fit your needs. For that, there's a *c
       ]
     }
   ],
-  "strictSSL": false,
-  "cookiePrefix": "cookie-"
+  "strictSSL": false
 }
 ```
 
-* **not_found_text** (required) → 
-* **not_authenticated_text** (required) → 
-* **outputFilename** (required) →  
-* **extensionFiles** (required) → 
-* **hosts** _(optional)_ → 
-* **strictSSL** _(optional)_ → 
-* **cookiePrefix** _(optional)_ →  
+* **outputFilename** (required) →  The output file name. By default: `death_notes.csv`
+* **extensionFiles** (required) →  The extension of the files to look for. By default, markdown files: `.md`
+* **not_found_text** _(optional)_ → Sometimes there are webpages that returns a 200 code, but in fact is not so (e.g. some Gitlab not found pages, etc.).
+* **not_authenticated_text** _(optional)_ → When you want to filter also when the URL shows a login form
+* **hosts** _(optional)_ → The tool will check if every URL belongs to some of the hosts found in this config property, and will apply its configuration:
+  * __host__ → The hostname to search for in the URL
+  * __proxy__ → HTTP Proxy to fetch all the URL's of the host
+  * __cookies__ → List of cookie keys needed to fetch that host. The tool will ask for values for every entry configured here.
+* **strictSSL** _(optional)_ → If you want to validate if SSL certificate is valid
 
 ## Usage
 
