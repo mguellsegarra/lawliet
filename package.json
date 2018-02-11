@@ -1,0 +1,20 @@
+{
+  "name": "lawliet",
+  "version": "0.0.1",
+  "description": "Death notes for broken links in your documentation files",
+  "main": "index.js",
+  "author": "@mguellsegarra",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "chalk": "^2.3.0",
+    "cli-box": "^6.0.8",
+    "get-urls": "^7.2.0",
+    "inquirer": "^5.1.0",
+    "json2csv": "^3.11.5",
+    "ora": "^1.4.0",
+    "recursive-readdir": "^2.2.1",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  }
+}

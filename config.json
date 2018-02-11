@@ -1,0 +1,17 @@
+{
+  "not_found_text": "The page you're looking for could not be found (404)",
+  "not_authenticated_text": "Login Mordorbank",
+  "hosts": [
+    {
+      "host": "mordorbank.org",
+      "proxy": "http://10.0.0.1:8080",
+      "cookies": [
+        "some_auth_session_token"
+      ]
+    }
+  ],
+  "strictSSL": false,
+  "extensionFiles": ".md",
+  "cookiePrefix": "cookie-",
+  "outputFilename": "death_notes.csv"
+}
