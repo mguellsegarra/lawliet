@@ -1,6 +1,6 @@
-# lawliet
+# 📓 lawliet
 
-📓 Death notes for broken links in your documentation files
+Death notes for broken links in your documentation files
 
 ## Why this tool
 
