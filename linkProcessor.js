@@ -129,6 +129,9 @@ const prepareRequestOptions = (options) => {
 const getHostConfig = (url) => {
     let hostConfig;
 
+    if (!config.hosts)
+        return undefined;
+        
     config.hosts.forEach((entry) => {
         if (url.indexOf(entry.host) !== -1) {
             hostConfig = entry;

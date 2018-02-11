@@ -26,19 +26,20 @@ const Assistant = {
             }
         ];
     
-        config.hosts.forEach(hostConfig => {
-            hostConfig.cookies.map((cookieKey) => {
-                const cookiePrompt = {
-                    type: 'input',
-                    name: config.cookiePrefix + cookieKey,
-                    message: 'Enter value for cookie named ' + cookieKey + ':',
-                    default: ""
-                };
-        
-                questions.push(cookiePrompt);
-            })    
-        });
-
+        if (config.hosts) {
+            config.hosts.forEach(hostConfig => {
+                hostConfig.cookies.map((cookieKey) => {
+                    const cookiePrompt = {
+                        type: 'input',
+                        name: config.cookiePrefix + cookieKey,
+                        message: 'Enter value for cookie named ' + cookieKey + ':',
+                        default: ""
+                    };
+            
+                    questions.push(cookiePrompt);
+                })    
+            });    
+        }
     
         return inquirer.prompt(questions);
     }
