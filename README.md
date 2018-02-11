@@ -27,8 +27,8 @@ _You'll need Node v6.9.4 installed on your OS of choice_
 * Just clone this repo:
 
 ```
-git clone https://github.com/mguellsegarra/lawliet.git
-cd lawliet
+# git clone https://github.com/mguellsegarra/lawliet.git
+# cd lawliet
 ```
 
 Then, install the dependencies:
