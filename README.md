@@ -45,7 +45,7 @@ You can customize **lawliet** in order to fit your needs. For that, there's a *c
 {
   "not_found_text": "The page you're looking for could not be found (404)",
   "not_authenticated_text": "Login Mordorbank",
-  "outputFilename": "death_notes.csv"
+  "outputFilename": "death_notes.csv",
   "extensionFiles": ".md",
   "hosts": [
     {
@@ -57,7 +57,7 @@ You can customize **lawliet** in order to fit your needs. For that, there's a *c
     }
   ],
   "strictSSL": false,
-  "cookiePrefix": "cookie-",
+  "cookiePrefix": "cookie-"
 }
 ```
 
