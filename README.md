@@ -65,7 +65,7 @@ You can customize **lawliet** in order to fit your needs. For that purpose, ther
 * **not_found_text** _(optional)_ → Sometimes there are webpages that returns a 200 code, but in fact is not so (e.g. some Gitlab not found pages, etc.).
 * **not_authenticated_text** _(optional)_ → When you want to filter also when the URL shows a login form
 * **hosts** _(optional)_ → The tool will check if every URL belongs to some of the hosts found in this config property, and will apply its configuration.
-  * __host__ → The hostname to search for in the URL
+  * __host__ → The hostname to search for in the URL
   * __proxy__ → HTTP Proxy to fetch all the URL's that matchs this host
   * __cookies__ → List of cookie keys needed to fetch that host. The tool will ask for values for every entry configured here.
 * **strictSSL** _(optional)_ → If you want to validate if SSL certificate is valid
