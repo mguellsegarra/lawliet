@@ -80,6 +80,7 @@ And a CLI interface will ask you for the path, and more parameters.
 
 ## TODO
 
+* Detect and follow relative markdown links (e.g `[link](../doc/sdk.md)`)
 * Improve URL extraction and parsing
 * Implement unit testing
 
